@@ -5,9 +5,8 @@ MAINTAINER Kelsey Hightower <kelsey.hightower@gmail.com>
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install unzip
 
 # Add the consul agent binary and web ui static files.
-ADD https://dl.bintray.com/mitchellh/consul/0.2.0_linux_amd64.zip /tmp/consul.zip
-ADD https://dl.bintray.com/mitchellh/consul/0.2.0_web_ui.zip /tmp/web_ui.zip
-
+ADD https://dl.bintray.com/mitchellh/consul/0.2.1_linux_amd64.zip /tmp/consul.zip
+ADD https://dl.bintray.com/mitchellh/consul/0.2.1_web_ui.zip /tmp/web_ui.zip
 # Create the consul install directory.
 RUN mkdir -p /opt/consul/data
 
